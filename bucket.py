@@ -7,7 +7,7 @@ import config
 from timezone import change_timezone
 from progress import ProgressPercentage
 
-class bucket():
+class Bucket():
     def __init__(self, aws_credentials = None):
         # Creating the client connection to the s3 bucket using boto3
         if not aws_credentials:
@@ -322,4 +322,4 @@ class bucket():
             print("Cannot move folder : ", e)
             return False
 
-# bucket_object = bucket()
+# bucket_object = Bucket()
